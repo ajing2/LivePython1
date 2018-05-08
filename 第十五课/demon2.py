@@ -26,6 +26,8 @@ class TestMysql(object):
     def update(self):
         print("update")
 
+    def end(self):
+        self.a.close()
 
 
 
