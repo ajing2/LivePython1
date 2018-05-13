@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2018/4/3 21:57
 # @Author  : lingxiangxiang
-# @File    : demon6.py
+# @File    : demon1.py
 
 # for i in range(1, 10):
 #     print("{0} x {1} = {2}".format(i, i, i*i))

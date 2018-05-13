@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2018/4/17 20:36
 # @Author  : lingxiangxiang
-# @File    : demon6.py
+# @File    : demon1.py
 
 from random import randint
 

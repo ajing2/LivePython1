@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2018/4/19 21:32
 # @Author  : lingxiangxiang
-# @File    : demon6.py
+# @File    : demon1.py
 
 '''
 java  中的set和get方法
