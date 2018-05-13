@@ -80,12 +80,12 @@ filter和filter_by的区别
 filter：可以使用>  < 等，但是列必须是： 表.列，   filter的等于号是==
 session.query(Student).filter(Student.id>100)
 filter 不支持组合查询
-session.query(Student).filter(Studnet.id>100).filter(name='ling')
+session.query(Student).filter(Studnet.id>100).filter(name=='ling')
 
 filter_by： 可以直接写列，不支持< >  filter_by 等于是==
 session.query(Student).filter_by(id==10)
 filter_by 可以支持组合查询
-session.query(Student).filter_by(name='ling' and id='342')
+session.query(Student).filter_by(name=='ling' and id=='342')
 
 select * from student where name like '%ling%';
 模糊查询含有ling的关键字
@@ -103,7 +103,7 @@ all()   list(单个元素是tuple)
 1.  先查出来
 2. 跟新一下类所对应的属性值就ok
 3. session.commit()
-student1 = session.query(Student).filter(Student.id=1001)
+student1 = session.query(Student).filter(Student.id==1001)
 student1.name = "test"
 session.commit()
 
