@@ -33,4 +33,7 @@ if __name__ == '__main__':
     p1.start()
     p3.start()
     print("end main")
+    help(Value)
+
+
 
