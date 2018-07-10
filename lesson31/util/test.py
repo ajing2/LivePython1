@@ -14,6 +14,8 @@ saltServer = SaltServer()
 # result2 = saltServer.runRunner('manage.status')
 # print(result2)
 #
-result1 = saltServer.runRunner('masterApp.publicKey', ipaddr='192.168.48.133')
-print(result1)
+# result1 = saltServer.runRunner('masterApp.publicKey', ipaddr='192.168.48.133')
+# print(result1)
+result2 = saltServer.runRunner('masterApp.installMinionid', ipaddr='192.168.48.133')
+print(result2)
 

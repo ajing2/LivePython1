@@ -12,10 +12,11 @@ class SaltServer(object):
     def __init__(self):
         self.session = requests.session()
         self.token = self.getToken()
+        print(self.token)
 
 
     def getToken(self):
-        url =  "http://192.168.48.135:8000/login"
+        url =  "http://192.168.48.137:8000/login"
         headers = {"Accept": "application/json"}
         data = {
             "username": "saltapi",
@@ -29,7 +30,7 @@ class SaltServer(object):
         return token
 
     def runModules(self, minionid, fun, arg=None):
-        url = "http://192.168.48.135:8000"
+        url = "http://192.168.48.137:8000"
         data = {
             "client": "local",
             "tgt": minionid,
@@ -53,16 +54,18 @@ class SaltServer(object):
 
 
     def runRunner(self, fun, **kwargs):
-        url = "http://192.168.48.135:8000"
+        url = "http://192.168.48.137:8000"
         data = {
             "client": "runner",
             "fun": fun,
         }
         data.update(kwargs)
+        print(data)
         resultBean = dict()
         try:
             res = self.session.post(url=url,  data=data)
             text = res.text
+            print(text)
             data = json.loads(text).get("return")
             resultBean['code'] = 0
             resultBean['message'] = "success"
