@@ -1,0 +1,37 @@
+h1 {
+    color: #6a5ebe;
+    font-size: 30px;
+    margin: 100px;
+}
+
+#ajingTitle{
+    color: yellow;
+    font-size: 35px;
+}
+
+.test{
+    color: blueviolet;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: small;
+}
+
+/*body {*/
+    /*background-color: beige;*/
+    /*background-image: url(../image/test.jpg);*/
+    /*!*background-repeat: no-repeat;*!*/
+    /*!*repeat-x, repeat-y  no-repeat*!*/
+    /*!*background-position: left;*!*/
+/*}*/
+
+p{
+    text-indent: 2em;
+    text-align: center;
+}
+
+div a{
+    color: black;
+    text-decoration: none;
+}
+#testtable{
+    border: 10px solid blue;
+}
